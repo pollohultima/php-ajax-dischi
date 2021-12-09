@@ -77,18 +77,21 @@ $discs = [
 
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Discs</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS v5.0.2 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./assets/style.css">
-  </head>
-  <body>
+</head>
+
+<body>
 
     <header class="d-flex align-items-center">
         <div class="logo px-4">
@@ -98,25 +101,26 @@ $discs = [
 
     <main>
         <div class="container-fluid gx-4 position-relative">
-           <div class="row gx-5 gy-4 justify-content-center">
+            <div class="row gx-5 gy-4 justify-content-center">
 
-               <?php foreach ($discs as $disc): ?>
+                <?php foreach ($discs as $disc): ?>
 
-                   <div class="col-2">
-                       <div class="card border-0 p-4">
-                           <img src="<?=$disc['poster']?>" alt="" class="mb-4" />
-                           <h5 class="text-center text-white">
-                           <?=$disc['title']?>
-                           </h5>
-                           <p class="text-center text-muted m-0"><?=$disc['author']?></p>
-                           <p class="text-center text-muted m-0"><?=$disc['year']?></p>
-                       </div>
-                   </div>
+                <div class="col-2">
+                    <div class="card border-0 p-4">
+                        <img src="<?=$disc['poster']?>" alt="" class="mb-4" />
+                        <h5 class="text-center text-white text-uppercase">
+                            <?=$disc['title']?>
+                        </h5>
+                        <p class="text-center text-muted m-0"><?=$disc['author']?></p>
+                        <p class="text-center text-muted m-0"><?=$disc['year']?></p>
+                    </div>
+                </div>
 
-               <?php endforeach;?>
-           </div>
+                <?php endforeach;?>
+            </div>
         </div>
     </main>
 
-  </body>
+</body>
+
 </html>
