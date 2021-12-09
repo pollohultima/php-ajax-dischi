@@ -30,7 +30,7 @@ require __DIR__ . '/layouts/head.php';
                         <div class="card border-0 p-4">
                             <img :src="disc.poster" alt="" class="mb-4" />
                             <h5 class="text-center text-white">
-                                {{disc.title}}
+                                {{disc.title.toUpperCase()}}
                             </h5>
                             <p class="text-center text-muted m-0">{{disc.author}}</p>
                             <p class="text-center text-muted m-0">{{disc.year}}</p>
